@@ -75,6 +75,7 @@
                                                     </small>
                                                 </div>
         </div>
+        </div>
 
         <div class="form-group">
             <@spring.bind "ownerForm.access"/>
@@ -98,9 +99,11 @@
                 <div class="col-md-12 input-group">
                     <input name="email" id="email" placeholder="Email"  value="${ownerForm.email}"class="form-control"  type="email">
                 </div>
-                <#list spring.status.errorMessages as error>
-                    <h5>${error}</h5>
-                </#list>
+                <div class="col-sm-12">
+                    <small  class="text-danger">
+                        <#list spring.status.errorMessages as error><div>${error}</div></#list>
+                    </small>
+                </div>
             </div>
         </div>
 

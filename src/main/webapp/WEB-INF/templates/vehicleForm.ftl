@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<@layout flag="repairs">
+<@layout flag="vehicles">
     <#import "/spring.ftl" as spring/>
 <head>
 
